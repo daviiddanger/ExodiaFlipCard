@@ -1,0 +1,80 @@
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url(exodia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Insomnia';
+    font-size: 30px;
+    color: #fff;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    perspective: 1000px;
+}
+
+.card{
+    width: 290px;
+    height: 400px;
+    position: relative;
+    transform-style:preserve-3d ;
+    transition: transform 2s;
+    transform: rotateY(180deg);/*Incia mostrando el lado B*/
+}
+
+.card-side{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+}
+
+.side-a-RightArm{
+    background: url(rArm.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-a-Head{
+    background: url(head.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-a-LeftArm{
+    background: url(lArm.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-a-RightLeg{
+    background: url(rleg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-a-LeftLeg{
+    background: url(lLeg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.side-b{
+    background: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+}
